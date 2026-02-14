@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - KVP Store</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="top-section">
+        <div class="container grid grid-two--cols">
+            <div>
+                <p class="top-section-para">Free Shipping. 30-day return or refund guarantee.</p>
+            </div>
+            <div class="top-section-second-div">
+                <a href="" class="sign-in">SIGN IN</a>
+                <a href="" class="sign-up">SIGN UP</a>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section>
+        <div class="container grid grid-two-cols">
+            <div class="container1">
+                <p class="p1"><span style="color: white; background-color: black; padding: 0.7rem 0.8rem; margin: 0 0.4rem 0 0;">KVP</span> STORE</p>
+            </div>
+            <div>
+                <nav class="navbar">
+                    <ul>
+                        <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+                        <li class="nav-item"><a href="About.html" class="nav-link">ABOUT</a></li>
+                        <li class="nav-item"><a href="Products.html" class="nav-link">PRODUCTS</a></li>
+                        <li class="nav-item"><a href="Contact.html" class="nav-link">CONTACT</a></li>
+                        <li class="nav-item5" style="margin: 0 0 0 2rem;">
+                            <a href="addToCart.html" class="nav-link add-to-cart-button" id="cartValue">
+                                <i class="fa-solid fa-cart-shopping fa-2x">0</i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <section class="section-products">
+        <div class="container">
+            <div class="section-common-heading" style="margin: 0 0 2rem 3rem;">Checkout KVP Store</div>
+        </div>
+        <section class="container">
+            <div id="productContainer">
+    
+            </div>
+        </section>
+    </section>
+    <template id="productTemplate">
+        <div class="cards" id="cardValue">
+            <article class="information [card]">
+                <span class="category"></span>
+                <div class="imageContainer">
+                    <img src="" alt="" class="productImage" />
+                </div>
+                <h2 class="productName"></h2>
+                <div class="productRating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="productDescription"></p>
+                <div class="productPriceElement">
+                    <p class="productPrice"></p>
+                    <p class="productActualPrice"></p>
+                </div>
+                <div class="productStockElement">
+                    <p class="productProperty">Total Stocks Available:</p>
+                    <p class="productStock"></p>
+                </div>
+                <div class="productQuantityElement">
+                    <p class="productProperty">Quantity(Pieces)</p>
+                    <div class="stockElement">
+                        <button class="cartDecrement">-</button>
+                        <p class="productQuantity">1</p>
+                        <button class="cartIncrement">+</button>
+                    </div>
+                </div>
+                <button class="add-to-cart-button">
+                    <i class="fa-solid fa-cart-shopping" style="margin: 0 1rem 0 0;"></i> <span style="text-align: center; margin: 0 0 0 0;">Add To Cart</span>
+                </button>
+            </article>
+        </div>
+    </template>
+    <section class="extra-hero-div">
+        <div class="container3 grid grid-three--cols">
+            <div class="grid-two---cols">
+                <div>
+                    <p class="extra-hero-div-p1">NEW YEAR SALE</p>
+                    <h3 class="extra-hero-div-h3">Get And Extra 50% <br> Off </h3>
+                    <a href="" class="extra-hero-div-a">SHOP NOW</a>
+                </div>
+                <div>
+                    <figure><img src="src/laptop.jfif" alt="an laptop image"></figure>
+                </div>
+            </div>
+            <div class="grid-two---cols">
+                <div>
+                    <p class="extra-hero-div-p1">NEW YEAR SALE</p>
+                    <h3 class="extra-hero-div-h3">Get And Extra 50% <br> Off </h3>
+                    <a href="" class="extra-hero-div-a">SHOP NOW</a>
+                </div>
+                <div>
+                    <figure><img src="src/headphone.jfif" alt="an laptop image"></figure>
+                </div>
+            </div>
+            <div class="grid-two---cols">
+                <div>
+                    <p class="extra-hero-div-p1">NEW YEAR SALE</p>
+                    <h3 class="extra-hero-div-h3">Get And Extra 50% <br> Off </h3>
+                    <a href="" class="extra-hero-div-a">SHOP NOW</a>
+                </div>
+                <div>
+                    <figure><img src="src/mobile.png" alt="an laptop image"></figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container4 grid grid-four--cols">
+            <div class="container4 grid grid-two----cols">
+                <div class="four-cols-div1">
+                    <i class="fa-solid fa-truck-fast fa-3x" style="margin-left: 3rem;"></i>
+                </div>
+                <div class="four-cols-div2">
+                    <p class="four-cols-p1" style="margin-left: 1rem;">Worldwide Shipping</p>
+                    <p class="four-cols-p2" style="margin-left: 1rem;">Order Above $100</p>
+                </div>
+            </div>
+            <div class="container4 grid grid-two----cols">
+                <div style="margin-left: 7rem;">
+                    <i class="fa-solid fa-rotate fa-3x"></i>
+                </div>
+                <div>
+                    <p class="four-cols-p1">Easy 30 Day Returns</p>
+                    <p class="four-cols-p2">Back Returns in 7 Days</p>
+                </div>
+            </div>
+            <div class="container4 grid grid-two----cols">
+                <div style="margin-left: 7rem;">
+                    <i class="fa-solid fa-rotate fa-3x"></i>
+                </div>
+                <div>
+                    <p class="four-cols-p3">Money Back Guarantee</p>
+                    <p class="four-cols-p4">Guarantee With In 30-Days</p>
+                </div>
+            </div>
+            <div class="container4 grid grid-two----cols">
+                <div style="margin-left: 7rem;">
+                    <i class="fa-solid fa-headset fa-3x"></i>
+                </div>
+                <div>
+                    <p class="four-cols-p1">Easy Online Support</p>
+                    <p class="four-cols-p2">24 / 7 Any Time Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-why--choose">
+        <div class="container5">
+            <h2 class="section-common--heading">Why Choose KVP Store</h2>
+            <p class="section-common--subheading">Choose KVP EduHub for a holistic, enriching learning experience that
+                empowers
+                you to achieve your goals.</p>
+            <div class="container">
+                <div class="container grid grid-three--cols">
+                    <div class="choose-left-div text-align-right">
+                        <div class="why-choose--div1">
+                            <p class="common-text--highlight1 text-align--right">1</p>
+                            <h3 class="section-common--title">Wide Selection</h3>
+                            <p class="section-common--para1">KVP Store offers a diverse range of gadgets. from
+                                smartphones to smart home
+                                devices. ensuring you find what you
+                                need to elevate your lifestyle and meet your tech requirements.</p>
+                        </div>
+                        <div class="why-choose--div1">
+                            <p class="common-text--highlight1 text-align--right">2</p>
+                            <h3 class="section-common--title">Quality Assurance</h3>
+                            <p class="section-common--para1">Every gadget at KVP Store undergoes rigrous quality checks.
+                                guaranteeing reliability and performance. so you can shop with confidence knowing you're
+                                getting the best.</p>
+                        </div>
+                        <div class="why-choose--div1">
+                            <p class="common-text--highlight1 text-align--right">3</p>
+                            <h3 class="section-common--title">Wide Selection</h3>
+                            <p class="section-common--para1">Enjoy great value with KVP Store's competitive prices on
+                                high-quality gadgets. making top-of-the-line technology accessible to all without
+                                compromising on quality on performance</p>
+                        </div>
+                    </div>
+                    <div class="choose-right-div text-align-left">
+                        <div class="why-choose--div">
+                            <div class="container6">
+                                <div class="container7">
+                                    <img src="src/vrheadset.jfif" alt="an vrheaset girl image" class="vrheadsetgirl">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose-left-div text-align-left">
+                        <div class="why-choose--div">
+                            <p class="common-text--highlight">4</p>
+                            <h3 class="section-common--title">Wide Selection</h3>
+                            <p class="section-common--para">Our knowledge staff provides expert guidance. helping you
+                                choose the right gadget to meet your needs and preferences. ensuring you make informed
+                                decisions every step of the way.</p>
+                        </div>
+                        <div class="why-choose--div">
+                            <p class="common-text--highlight">5</p>
+                            <h3 class="section-common--title">Wide Selection</h3>
+                            <p class="section-common--para">With KVP Store. Shopping for gadgtes is easy and
+                                conveninent. Our user-friendly websites and secure payment options ensure a seamless
+                                experience from browsing to checkout. all from the comfort of your home.</p>
+                        </div>
+                        <div class="why-choose--div">
+                            <p class="common-text--highlight">6</p>
+                            <h3 class="section-common--title">Wide Selection</h3>
+                            <p class="section-common--para">KVP Store is commited to provides the excellet service to
+                                our customers. also the prompt assistance with inquires to get them the best result
+                                possible also handling the orders and delieveries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section class="footer-section">
+            <div class="container8 grid grid-four---cols">
+                <div>
+                    <p class="p2"><span style="color: white; background-color: skyblue; padding: 0.7rem 0.8rem; margin: 0 0.4rem 0 0;">KVP</span>
+                        STORE</p>
+                    <p style="color: white; margin: 2rem 0 10rem 2.2rem; font-size: 1.2rem; word-spacing: 0.1rem; letter-spacing: 0.1rem;">Welcome to KVP Ecommerce. your ultimate destination for cutting-edge gadgets!</p>
+                </div>
+                <div>
+                    <ol>
+                        <li>SHOPPING</li>
+                        <li>Computer Store</li>
+                        <li>Laptop Store</li>
+                        <li>Accesories</li>
+                        <li>Sales & Discount</li>
+                    </ol>
+                </div>
+                <div>
+                    <ol>
+                        <li>Experience</li>
+                        <li>Contact us</li>
+                        <li>Payment Method</li>
+                        <li>Delievery</li>
+                        <li>Return and Exchange</li>
+                    </ol>
+                </div>
+                <div>
+                    <p class="footer-section--p3">NEWSLETTER</p>
+                    <p class="footer-section--p4">Welcome to KVP Ecommerce. your Ultimate destination for cutting-edge
+                        gadgets!</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <p class="footer-section-para">Designed BY KVP Store</p>
+        </section>
+        <script type="module" src="src/main.js"></script>
+</body>
+</html>
